@@ -15,4 +15,3 @@ TTH,the tutorial is too hard,https://www.asurascans.com/the-tutorial-is-too-hard
 MLH,the max level hero has returned,https://www.asurascans.com/the-max-level-hero-has-returned-chapter-,a
 SPF,the max level hero has returned,https://www.asurascans.com/spirit-farmer-chapter-,a
 GMR,the gamer,https://reset-scans.com/manga/the-gamer/chapter-,r
-TGR,[TEMP] the gamer,https://reset-scans.com/manga/the-gamer/chapter-,f
