@@ -155,10 +155,6 @@ def scrapreset(base, filename):
 
 
 
-
-
-
-
 #on start, say bot is online
 @client.event
 async def on_ready():
@@ -172,6 +168,7 @@ async def on_message(message):
   #global variables
   global links
   global scraping
+  keysCh = client.get_channel(892629646284296213)
   mainChannel = client.get_channel(889404717732601856)
   summoned = False
   #ping pong function
@@ -203,11 +200,14 @@ async def on_message(message):
     for i in range(1,len(link.split("/")[3].split("-"))-2):
       name += " "+link.split("/")[3].split("-")[i]
     link = link[0:-len(link.split("-")[-1])]
-    scans = link.split("/")[2].split(".")[0]
+    scans = link.split("/")[2].split(".")[-2]
     file = open("Keys/Key.txt","a")
     key.append([abr,name,link,scans])
     file.write(str("\n"+abr+","+name+","+link+","+scans))
     file.close()
+    await keysCh.send(abr+" - "+name+" (from "+scans+")")
+    return
+
 
   #key specific functions
   for i in key:
@@ -251,12 +251,3 @@ async def on_message(message):
 
 keep_alive()
 client.run(os.getenv("token"))
-
-#https://flamescans.org/omniscient-readers-viewpoint-chapter-73/
-#await create_text_channel(name, *, overwrites=None, category=None, reason=None, **options)
-
-
-
-
-
-
