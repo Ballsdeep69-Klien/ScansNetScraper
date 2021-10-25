@@ -1,29 +1,29 @@
-# from flask import Flask
+from flask import Flask
 
-# from threading import Thread
-
-
-
-# app = Flask('')
+from threading import Thread
 
 
 
-# @app.route('/')
-
-# def home():
-
-#     return "I'm alive"
+app = Flask('')
 
 
 
-# def run():
+@app.route('/')
 
-#   app.run(host='0.0.0.0',port=8080)
+def home():
+
+    return "I'm alive"
 
 
 
-# def keep_alive():  
+def run():
 
-#     t = Thread(target=run)
+  app.run(host='0.0.0.0',port=8080)
 
-#     t.start()
+
+
+def keep_alive():  
+
+    t = Thread(target=run)
+
+    t.start()

@@ -1,17 +1,3 @@
 Abbreviation,Full Name,Link,key
-ORV,omniscnet readers viewpoint,https://flamescans.org/omniscient-readers-viewpoint-chapter-,f
-RMS,a returners magic should be special,https://flamescans.org/-a-returners-magic-should-be-special-chapter-,f
-DRT,dungeon reset,https://flamescans.org/dungeon-reset-chapter-,f
-SLV,solo levelling,https://flamescans.org/-solo-leveling-chapter-,f
-PST,player starting from today,https://flamescans.org/player-starting-from-today-chapter-,f
-SSD,Skeleton soldier who couldn't protect the dungeon,https://flamescans.org/skeleton-soldier-couldnt-protect-the-dungeon-chapter-,f
-JJC,Jungle Juice,https://flamescans.org/jungle-juice-chapter-,f
-PLD,Peerless Dad,https://flamescans.org/peerless-dad-chapter-,f
-SPT,Supreme Taoist,https://flamescans.org/supreme-exorcist-chapter-,f
-ADV,the tutorial tower of the advanced player,https://www.asurascans.com/the-tutorial-tower-of-the-advanced-player-chapter-,a
-PCLA,player who can't level up,https://www.asurascans.com/player-who-cant-level-up-chapter-,a
-HHR,hero has returned,https://www.asurascans.com/hero-has-returned-chapter-,a
-TTH,the tutorial is too hard,https://www.asurascans.com/the-tutorial-is-too-hard-chapter-,a
-MLH,the max level hero has returned,https://www.asurascans.com/the-max-level-hero-has-returned-chapter-,a
-SPF,the max level hero has returned,https://www.asurascans.com/spirit-farmer-chapter-,a
-GMR,the gamer,https://reset-scans.com/manga/the-gamer/chapter-,r
+ORV,omniscient readers viewpoint,https://flamescans.org/omniscient-readers-viewpoint-chapter-,flamescans
+GMR,manga,https://reset-scans.com/manga/the-gamer/chapter-,reset-scans
