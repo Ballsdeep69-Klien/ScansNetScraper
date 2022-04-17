@@ -1,9 +1,5 @@
 Abbreviation,Full Name,Link,key
 ORV,omniscient readers viewpoint,https://flamescans.org/omniscient-readers-viewpoint-chapter-,flamescans
-TTA,the tutorial tower of the advanced player,https://www.asurascans.com/the-tutorial-tower-of-the-advanced-player-chapter-,asurascans
-STIP,starting today im a player,https://www.asurascans.com/starting-today-im-a-player-chapter-,asurascans
+GMR,manga,https://reset-scans.com/manga/the-gamer/chapter-,reset-scans
 TTH,the tutorial is too hard,https://www.asurascans.com/the-tutorial-is-too-hard-chapter-,asurascans
-TM,taming master,https://www.asurascans.com/taming-master-chapter-,asurascans
-PLP,player who cant level up,https://www.asurascans.com/player-who-cant-level-up-chapter-,asurascans
-LAVD,legend of asura the venom dragon,https://www.asurascans.com/legend-of-asura-the-venom-dragon-chapter-,asurascans
-SF,spirit farmer,https://www.asurascans.com/spirit-farmer-chapter-,asurascans
+lookism,lookism,https://kumascans.com/lookism-chapter-,kumascans

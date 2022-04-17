@@ -1,0 +1,25 @@
+import discord
+import os
+import requests
+from bs4 import BeautifulSoup
+from PIL import Image
+from webserver import keep_alive
+from io import BytesIO
+import shutil
+
+
+site = "https://www.mangaupdates.com/groups.html?id=12391"
+soup = BeautifulSoup(requests.get(site).text)
+output = soup.find_all("div", {"class": "row no-gutters"})[12]
+
+soup = BeautifulSoup(output.text)
+print(str(soup)[25:-14])
+
+
+output=""
+for i in soup.find_all("div"):
+  if i["class"] == "row no-gutters":
+    i+=output
+
+
+soup = BeautifulSoup(requests.get("https://kumascans.com/lookism-chapter-345/").text)

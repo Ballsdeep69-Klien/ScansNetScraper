@@ -35,6 +35,7 @@ def redscrap(base, filename,key):
   print(filename)
   soup = BeautifulSoup(requests.get(base).text, 'html.parser')
   lim = int(len(soup.find_all("img")))
+  print(key)
   if lim < 5:
     return redscrap(base, "Error")
   if(key == "asurascans"):
@@ -43,6 +44,8 @@ def redscrap(base, filename,key):
     output = scrapimgs(base,filename,1,6)
   elif(key == "reset-scans"):
     output = scrapreset(base,filename)
+  elif(key == "kumascans"):
+    output = scrapimgs(base,filename,1,19)
   else:
     output = scrapimgs(base,filename,1,0)
   return output
@@ -85,8 +88,6 @@ def scrapimgs(base, filename,start,end):
           output.append(name)
     print(output)
     return output
-    # await message.channel.send(file=discord.File("Data/ORV55p1."+str(int(height/width))+".jpeg"))
-    # return lim
 
 def scrapflame(base, filename,):
     soup = BeautifulSoup(requests.get(base).text, 'html.parser')
@@ -155,12 +156,14 @@ def scrapreset(base, filename):
 
 
 
-#on start, say bot is online
+
+
+
+
+# on start, say bot is online
 @client.event
 async def on_ready():
-  mainChannel = client.get_channel(889404717732601856)
   print("We have logged in as {0.user}".format(client))
-  await mainChannel.send("Bot is once again online")
   
 #on message
 @client.event
@@ -169,13 +172,12 @@ async def on_message(message):
   global links
   global scraping
   keysCh = client.get_channel(892629646284296213)
-  mainChannel = client.get_channel(889404717732601856)
   summoned = False
   #ping pong function
   if client.user.mentioned_in(message):
     summoned = True
-    await mainChannel.send("Bot was pinged")
     await message.channel.send("Pong!")
+    return
 
   #don't read bot messages
   if(message.author == client.user):
@@ -184,7 +186,6 @@ async def on_message(message):
   #is it being summoned?
   for i in commands:
     if(message.content.startswith(i)):
-      await mainChannel.send("Bot was summoned")
       summoned = True
   if (summoned == False):
     return
